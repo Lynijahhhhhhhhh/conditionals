@@ -29,11 +29,20 @@ print('\n' + 'Task 1' + '\n')
 #
 # WRITE CODE BELOW #
 a = float(input('a = '))
-b =
-c =
-d =
+b =float(input('b = '))
+c =float(input('c = '))
+d =float(input('d = '))
 
 print('a == b |', a == b)
+print('a == b ==  |', a == b == c)
+print("a > b > c",a > b > c)
+print("a < b < c < d",a < b < c < d)
+print(" a != b == c != d",a != b == c != d)
+print("a >= b >= c == d",a >= b >= c == d)
+print("a <= b > c <= d",a <= b > c <= d)
+
+
+
 
 # 2 - if Statements (ONLY USE if STATEMENTS)
 print('\n' + 'Task 2' + '\n')
@@ -53,11 +62,16 @@ print('\n' + 'Task 2' + '\n')
 #           the first word appears after the second word.
 #
 # WRITE CODE BELOW #
-word1 = input('enter a word: ')
-word2 =
-
-if word1 == word2:
-    print(word1, 'and', word2, 'are the same!')
+word1=input(">>Word: ") 
+word2=input(">>Word: ") 
+if word1==word2:
+    print("These words are the same! ")
+if word1!=word2:
+    print("These words are not the same! ")
+if word1<word2:
+    print("Word 1 appears first alphabetically. ")
+if word1>word2:
+    print("Word 2 appears first alphabetically. ")
 
 
 # 3 - if-elif-else Statements
@@ -78,7 +92,20 @@ print('\n' + 'Task 3' + '\n')
 #       5. Otherwise, print 'Lose!'
 #
 # WRITE CODE BELOW #
+print("Dice game")
+dice1=randint(1,6)
+dice2=randint(1,6)
 
-
-
+if dice1==dice2:
+    print("Doubles! they're both", dice1)
+elif dice1==1 and dice2==dice1:
+    print("Snake Eyes!")
+elif dice1%2==0 and dice2%2==0:
+    print("Evens!", dice1 , "and", dice2)
+elif dice1%2!=0 and dice2%2!=0:
+    print("Odds!", dice1 , "and", dice2)
+elif dice1+dice2>6:
+    print("Win! total is", dice1+dice2)
+else:
+    print(" You lost, total is", dice1+dice2)
 

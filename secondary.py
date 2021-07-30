@@ -21,7 +21,12 @@ print('\n' + 'Task 1' + '\n')
 #   b. Determine if the word is a palindrome.
 #       a. If so, print that the word is a palindrome.
 #       b. Otherwise, print that the word is not a palindrome.
-
+word=input("Word: ")
+word=word.lower()
+if word == word[::-1]:
+    print("Word is a palindrome.")
+else:
+    print("Word is not a palindrome")
 
 # 2 - for Loop Patterns
 print('\n' + 'Task 2' + '\n')
@@ -52,13 +57,22 @@ for i in range(7):
 
 print()
 
-# ****
-# *   *
-# *   *
-# *   *
-# *   *
-# *   *
-# ****
+# ****  i=0
+# *   * i=1
+# *   * i=2
+# *   * i=3
+# *   * i=4
+# *   * i=5
+# ****  i=6
+
+# '****'  | 
+# '*   *' |
+for i in range(1):# 
+    print(s*5)# 
+for i in range(5):# 
+    print(s*1 + " "*4 + s*1)# 
+for i in range(1):# 
+    print(s*5)
 
 
 # &
@@ -67,7 +81,10 @@ print()
 # &
 # &
 # &&&&&
-
+for i in range(5):
+    print(s)
+for i in range(1):
+    print(s*5)
 
 # @   @
 # @   @

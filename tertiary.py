@@ -24,6 +24,38 @@ print('--- Part 1 ---'.center(25))
 #   and informed the user if they are warmer or colder.
 #
 # WRITE CODE BELOW #
+from random import randint
+
+print("The secret number is somewhere between 0 and 100. You have 10 guesses.")
+
+user_input = int(input('Make a guess: '))
+
+random = randint(0,100)
+
+count = 0
+ 
+while user_input is not random and count < 9:
+    count = count + 1
+
+    how_close_to_answer = random - user_input
+
+    if 5 < how_close_to_answer.__abs__() <20:
+        user_input = int(input(f'Warm. Remaining guesses {10 - count}: '))
+
+    elif how_close_to_answer.__abs__() >= 20:
+        user_input = int(input(f'Cold. Remaining guesses {10 - count}:  '))
+
+    else:
+        user_input = int(input(f'Hot. Remaining guesses {10 - count}: '))
+
+
+if user_input==random:
+    print('You Win!')
+    print(f"It took you {count + 1} guesses to get this correct.")
+    
+
+else:
+   print('You Lose! The number was', random) 
 
 
 # ---------- # Part 2 # ---------- #
@@ -65,3 +97,21 @@ print('\n' + ('--- Part 2 ---'.center(25)) + '\n')
 #
 # WRITE CODE BELOW #
 
+def hammingD(str1, str2):
+    i = 0
+    count = 0
+ 
+    while(len(str1) == len(str2)):
+        if(str1[i] != str2[i]):
+            count += 1
+        i += 1
+    return count
+ 
+# input
+str1 = input("Enter the string>> ")
+str2 = input("Enter the other string>> ")
+
+#variable
+distance=hammingD(str1, str2)
+# function call
+print("They have",distance, "differences, and therefore the Hamming Distance is",distance ,".")

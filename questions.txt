@@ -1,29 +1,37 @@
-Name:
-Date:
+Name: Lynijah Russell
+Date: 07,22,2021
 
 1 - What are the comparison operators and how do they work?
+==	Equal
+!=	Not equal	
+>	Greater than		
+<	Less than		
+>=	Greater than or equal to		
+<= Less than ot equal to
 
+theyre used to compare values
 
 2 - What is the name of the type that has the values True and False?
-
+Boolean
 
 3 - How do we make decisions within a program?
 
+we find the problem then find a mixture of conditions to solve each possibility 
 
 4 - If the condition of an if Statement evaluates to True, what happens?
-
+whatever the programmer specifies to happen in that occasion runs
 
 5 - If the condition of an if Statement evaluates to False, what happens?
-
+It carries on and does not execute 
 
 6 - What is an else Statement?
-
+A condition that comes after an if ,if the if is false
 
 7 - Do else Statements have a condition?
-
+no its just the leftovers of the scenerio 
 
 8 - Do elif Statements have a condition?
-
+yes because its saying if its not that then try this 
 
 9 - Can you write code in between an if - elif - else tree?
-
+no
